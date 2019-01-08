@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --theme-color1: #1b59df;
+    --theme-color2: rgb(26, 80, 179);
+    --theme-color3: #10396e;
+    --text--theme: #fff;
+    --outline-theme: #2e3338;
+    --edge-theme: #ced4da;
+}
+
+body {
+    display: block;
+    position: relative;
+    background-color: var(--outline-theme);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+}
+
+.box {
+    background: var(--text--theme);
+    border-radius: 3px;
+    max-width: 700px;
+    height: 46vh;
+    margin-top: 27vh;
+    overflow: hidden;
+}
+
+.reg {
+    height: 70vh;
+    margin-top: 15vh;
+}
+
+.box div {
+    text-align: center;
+    padding-top: 2vh;
+}
+
+.box div>a {
+    color: var(--outline-theme);
+}
+
+.box p {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+    padding: 4vh;
+    padding-bottom: 5vh;
+    font-size: 2.2rem;
+}
+
+.btn {
+    width: 78.5%;
+    padding: 2vh .75rem;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--text--theme);
+    background-color: var(--theme-color1);
+    background-clip: padding-box;
+    border: 1px solid var(--theme-color3);
+    border-radius: .25rem;
+    outline-color: var(--theme-color1);
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 2vh;
+}
+
+.btn:hover {
+    background-color: var(--theme-color2);
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.form-control {
+    width: 75%;
+    padding: 2vh .75rem;
+    font-size: 1rem;
+    color: var(--outline-theme);
+    background-color: var(--text--theme);
+    background-clip: padding-box;
+    border: 1px solid var(--edge-theme);
+    border-radius: .25rem;
+    outline-color: var(--theme-color1);
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 2vh;
+}
+
+.tooltip {
+    visibility: hidden;
+    position: absolute;
+    left: 20vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: var(--text--theme);
+    margin-left: 15vw;
+    z-index: 1;
+    padding: 5px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    background: rgba(0, 16, 34, .7);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5), -2px -2px 12px rgba(0, 0, 0, .5);
+    transition: opacity 3s ease-in-out;
+}
+
+.tooltip-show {
+    opacity: 0.1;
+    visibility: visible;
+}
+
+.outside {
+    text-align: center;
+    padding-top: 1vh;
+}
+
+.outside>a {
+    color: var(--text--theme);
+    text-decoration: none;
+}
+
+@media(max-width:1200px) {
+    .btn {
+        width: 79%;
+    }
+}
+
+@media(max-width:600px) {
+    .btn {
+        width: 80%;
+    }
+}
+
+@media(max-width:500px) {
+    .btn {
+        width: 80.5%;
+    }
+}
+
+@media(max-width:450px) {
+    .btn {
+        width: 81%;
+    }
+}
+
+@media(max-width:400px) {
+    .btn {
+        width: 82%;
+    }
+}
+
+@media(max-width:345px) {
+    .btn {
+        width: 83%;
+    }
+}
+
+@media(max-width:300px) {
+    .btn {
+        width: 84%;
+    }
+}
+
+@media(max-width:270px) {
+    .btn {
+        width: 85%;
+    }
+}
+
+@media(max-width:220px) {
+
+    body {
+        font-size: .7rem;
+    }
+
+    .btn,
+    .form-control {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        font-size: .8rem;
+    }
+
+    .box p {
+        font-size: 1.7rem;
+    }
+}
+
+@media(max-height:800px) {
+    .box {
+        height: 50vh;
+        margin-top: 25vh;
+    }
+
+    .reg {
+        height: 76vh;
+        margin-top: 12vh;
+    }
+}
+
+@media(max-height:650px) {
+    .box {
+        height: 60vh;
+        margin-top: 20vh;
+    }
+
+    .box div {
+        padding-top: 4vh;
+    }
+
+    .btn,
+    .form-control {
+        margin-top: 3vh;
+    }
+
+    .reg {
+        height: 90vh;
+        margin-top: 5vh;
+    }
+}
+
+@media(max-height:550px) {
+    .box {
+        height: 80vh;
+        margin-top: 10vh;
+    }
+
+    .box div {
+        padding-top: 1vh;
+    }
+
+    .box p {
+        padding: 4vh;
+        padding-bottom: 7vh;
+    }
+
+    .btn,
+    .form-control {
+        margin-top: 5vh;
+        padding: 3vh .75rem;
+    }
+
+    .reg {
+        height: auto;
+        margin-top: auto;
+    }
+}
+
+@media(max-height:400px) {
+    .box {
+        height: auto;
+        margin-top: auto;
+    }
+}
